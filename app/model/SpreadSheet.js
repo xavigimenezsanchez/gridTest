@@ -11,6 +11,7 @@ Ext.define('GridTest.model.SpreadSheet', {
         {name: 'F', type: 'int', allowNull: true},
         {name: 'G', type: 'int', allowNull: true},
         {name: 'H', type: 'int', allowNull: true},
-        {name: 'I', type: 'int', allowNull: true}
+        {name: 'I', type: 'int', allowNull: true},
+        {name: 'J', type: 'int', allowNull: true}
     ]
 });
