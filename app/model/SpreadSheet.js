@@ -2,8 +2,7 @@ Ext.define('GridTest.model.SpreadSheet', {
     extend: 'GridTest.model.Base',
 
     fields: [
-        /*'A','B','C','D','E','F','G','H','I','J'*/
-        {name: 'A', type: 'int', allowNull: true},
+        {name: 'A', type: 'auto', allowNull: true},
         {name: 'B', type: 'int', allowNull: true},
         {name: 'C', type: 'int', allowNull: true},
         {name: 'D', type: 'int', allowNull: true},
