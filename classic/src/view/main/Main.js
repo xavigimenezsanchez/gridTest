@@ -17,7 +17,8 @@ Ext.define('GridTest.view.main.Main', {
         'GridTest.view.main.MainModel',
         'GridTest.view.main.List',
 
-        'GridTest.view.main.SpreadSheet'
+        'GridTest.view.main.SpreadSheet',
+        'GridTest.view.main.CustomTree'
     ],
 
     controller: 'main',
@@ -105,9 +106,22 @@ Ext.define('GridTest.view.main.Main', {
         }
     }, {
         title: 'Grid',
-        iconCls: 'fa-cog',
+        iconCls: 'fa-table',
         items: [{
             xtype: 'spreadSheet',
+
+            selectable: {
+                cells: true,
+                columns: true,
+                drag: true,
+                rows: true
+            }
+        }]
+    }, {
+        title: 'Tree',
+        iconCls: 'fa-tree',
+        items: [{
+            xtype: 'customTree',
 
             selectable: {
                 cells: true,

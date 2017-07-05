@@ -29,10 +29,21 @@ Ext.define('GridTest.view.main.SpreadSheet', {
         clicksToEdit: 2
     }],
 
+    rowSpanEditor: new Ext.Editor({
+        updateEl: true,
+        alignment: '1-1',
+        autoSixe: {
+            width: 'boundEl'
+        },
+        field: {
+            xtype: 'textfield'
+        }
+    }),
+
     columns: [
         { text: 'A', dataIndex: 'A', flex: 1, editor: { allowBlank: false },
             renderer: function(value) {
-                return Ext.String.format('<div>{0}</div><div>{1}</div>', value[0], value[1]);
+                return Ext.String.format('<div class="firstCell">{0}</div><div class="secondCell">{1}</div>', value[0], value[1]);
             }},
         { text: 'B', dataIndex: 'B', flex: 1, editor: { allowBlank: false }},
         { text: 'C', dataIndex: 'C', flex: 1, editor: { allowBlank: false }},
